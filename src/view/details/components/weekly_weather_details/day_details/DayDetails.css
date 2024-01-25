@@ -1,0 +1,21 @@
+.dayDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dayWeatherIcon {
+    width: 30px;
+    height: 30px;
+}
+
+hr
+
+/* Ask this */
+{
+    border: none;
+    height: 1px;
+    color: #333;
+    /* old IE */
+    background-color: #9b8d8d;
+}

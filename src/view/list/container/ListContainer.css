@@ -1,0 +1,22 @@
+.list-container{
+    background-color: #222746;
+    border-radius: 20px;
+    width: 400px;
+    height: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listed-cities-container{
+    width: 300px;
+    height: max-content;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #e7e7ec;
+    display: flex;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    flex-direction: column;
+}

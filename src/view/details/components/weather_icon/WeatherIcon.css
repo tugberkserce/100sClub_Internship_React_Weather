@@ -1,0 +1,8 @@
+.weather-icon{
+    width: min-content;
+    height: min-content;
+    background-color: 1px solid white;
+}
+.sunny-icon{
+    height: 48px;
+}

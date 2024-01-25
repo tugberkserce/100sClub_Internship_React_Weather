@@ -1,0 +1,8 @@
+.weatherDetails {
+    border-radius: 20px;
+    font-size: smaller;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background-color: #35353a
+}

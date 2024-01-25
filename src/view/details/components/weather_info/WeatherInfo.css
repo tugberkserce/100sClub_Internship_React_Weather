@@ -1,0 +1,9 @@
+.weather-info{
+    padding: 20px;
+    height: 840px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #222746;
+}
