@@ -7,8 +7,10 @@ import { useLocation } from 'react-router-dom';
 
 function Container(){
     const location = useLocation();
-    const [city, setCity] = useState('Ankara');
+    const [city, setCity] = useState(location.state);
     
+    console.log(location.state);
+
     useEffect(() => {
         setCity(location.state);}
     , [location.state]);

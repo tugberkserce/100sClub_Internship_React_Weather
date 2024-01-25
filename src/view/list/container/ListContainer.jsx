@@ -43,7 +43,11 @@ function ListContainer(props) {
       {savedCities.map((cityName, index) => (
         <div className="listed-cities-container" key={index}>
           {cityName}
+          <button>
+            <span className="material-icons">Look</span>
+          </button>
         </div>
+
       ))}
     </div>
   );
