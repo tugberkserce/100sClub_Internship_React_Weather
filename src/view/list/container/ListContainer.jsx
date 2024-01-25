@@ -28,7 +28,7 @@ function ListContainer(props) {
     if (storedCities) {
       setSavedCityName(JSON.parse(storedCities));
     }
-  }, []); // Empty dependency array to run only once on mount
+  }, []);
 
   if (!savedCities.length) {
     return (
