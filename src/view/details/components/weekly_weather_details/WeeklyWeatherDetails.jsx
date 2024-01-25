@@ -3,12 +3,17 @@ import './WeeklyWeatherDetails.css';
 import React, {useState, useEffect} from "react";
 
 
-function WeeklyWeatherDetails() {
+function WeeklyWeatherDetails({cityName}) {
     const [weeklyData, setWeeklyData] = useState({});
     const endPoint = "http://api.weatherapi.com/v1/";
     const apiKey = "de6cd1dcf0ea426eb2b155445241501";
     let whatWeWant = "forecast.json";
-    let city = "Istanbul";
+    const [city, setCity] = useState(cityName);
+    
+    useEffect(() => {
+        setCity(cityName);}
+    , [location.state]);
+    
 
     useEffect(() => {
         const getData = async () => {
@@ -39,19 +44,19 @@ function WeeklyWeatherDetails() {
             Next 7 Days
         </span>
         <hr />
-        <DayDetails data={weeklyForecast[0]}></DayDetails>
+        <DayDetails cityName={city} data={weeklyForecast[0]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[1]}></DayDetails>
+        <DayDetails cityName={city}data={weeklyForecast[1]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[2]}></DayDetails>
+        <DayDetails cityName={city}data={weeklyForecast[2]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[3]}></DayDetails>
+        <DayDetails cityName={city} data={weeklyForecast[3]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[4]}></DayDetails>
+        <DayDetails cityName={city} data={weeklyForecast[4]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[5]}></DayDetails>
+        <DayDetails cityName={city} data={weeklyForecast[5]}></DayDetails>
         <hr />
-        <DayDetails data={weeklyForecast[6]}></DayDetails>
+        <DayDetails cityName={city} data={weeklyForecast[6]}></DayDetails>
         <hr />
     </div>)
 }

@@ -1,12 +1,17 @@
 import "./HourlyWeatherDetails.css";
 import React, {useState, useEffect} from "react";
 
-function HourlyWeatherDetails() {
+function HourlyWeatherDetails({cityName}) {
     const [hourlyData, setHourlyData] = useState({});
     const endPoint = "http://api.weatherapi.com/v1/";
     const apiKey = "de6cd1dcf0ea426eb2b155445241501";
     let whatWeWant = "forecast.json";
-    let city = "Istanbul";
+    const [city, setCity] = useState(cityName);
+    
+    useEffect(() => {
+        setCity(cityName);}
+    , [location.state]);
+    
 
     useEffect(() => {
         const getData = async () => {
